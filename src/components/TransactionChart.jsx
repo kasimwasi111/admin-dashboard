@@ -93,7 +93,7 @@ const TransactionChart = () => {
               dataKey="sales"
               barSize={40}
               fill="#E2E8F0"
-              radius={[10, 10, 0, 0]}
+              radius={[10, 10, 10, 10]}
             />
           </BarChart>
         </ResponsiveContainer>

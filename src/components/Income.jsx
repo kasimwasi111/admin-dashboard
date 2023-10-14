@@ -1,11 +1,11 @@
 import React from "react";
 
-const Products = () => {
+const Income = () => {
   return (
     <div className="m-auto h-[8rem] w-[40rem] flex items-center justify-center text-orange-200 font-bold text-6xl bg-sky-700 rounded-lg">
-      Products Page
+      Income Page
     </div>
   );
 };
 
-export default Products;
+export default Income;
