@@ -56,31 +56,31 @@ const data = [
 
 const TransactionChart = () => {
   return (
-    <div className="bg-white ml-10 p-4 rounded-lg flex flex-col w-full h-[16rem]">
+    <div className="h-[14rem] bg-white p-2 rounded-lg flex flex-col flex-1 ml-10 ">
       <div className="flex justify-between">
         <div className="flex flex-col">
           <strong className="text-gray-700 font-extrabold">Overview</strong>
           <span className="text-gray-500 text-sm">Monthly Earning</span>
         </div>
-        <div className="flex flex-row gap-6 text-gray-500 text-sm bg-gray-200 items-center rounded-lg px-6 cursor-pointer">
+        <div className="flex flex-row gap-6 text-gray-500 text-xs bg-gray-200 items-center rounded-lg cursor-pointer px-2 w-50 h-6">
           <span>Quarterly</span>
           <span>
             {" "}
-            <AiOutlineDown size={14} />
+            <AiOutlineDown size={12} />
           </span>
         </div>
       </div>
-      <div className="mt-1 flex-1 text-xs">
+      <div className="w-full flex-1 text-xs">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
-            width={180} // Increase the width
-            height={180} // Increase the height
+            width={500} // Increase the width
+            height={300} // Increase the height
             data={data}
             margin={{
               top: 10,
               right: 10,
               left: 10,
-              bottom: 10,
+              bottom: 0,
             }}
           >
             <XAxis
@@ -91,9 +91,9 @@ const TransactionChart = () => {
             />
             <Bar
               dataKey="sales"
-              barSize={32}
+              barSize={40}
               fill="#E2E8F0"
-              radius={[10, 10, 10, 10]}
+              radius={[10, 10, 0, 0]}
             />
           </BarChart>
         </ResponsiveContainer>

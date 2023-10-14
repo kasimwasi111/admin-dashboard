@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="px-10 pt-8 flex items-center justify-between">
+    <div className="px-10 pt-2 flex items-center justify-between">
       <div className="text-black ">
         <p className="text-lg">Hello Kasim 👋,</p>
       </div>
@@ -15,7 +15,7 @@ const Header = () => {
         <input
           type="text"
           placeholder="Search"
-          className="text-sm focus:outline-none active:outline-none border w-[12rem] h-8 pl-8 pr-4 rounded-lg"
+          className="text-sm focus:outline-none active:outline-none w-[12rem] h-8 pl-8 pr-4 rounded-lg"
         />
       </div>
     </div>

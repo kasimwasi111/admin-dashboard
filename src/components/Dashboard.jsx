@@ -1,22 +1,20 @@
 import React from "react";
-import DashboardGridStats from "./DashboardGridStats";
-import TransactionChart from "./TransactionChart";
-import BuyerProfileChart from "./BuyerProfileChart";
-import RecentOrders from "./RecentOrders";
+import DashboardGridStats from "../components/DashboardGridStats";
+import TransactionChart from "../components/TransactionChart";
+import RecentOrders from "../components/RecentOrders";
+import BuyerProfileChart from "../components/BuyerProfileChart";
 
-const Dashboard = () => {
+export default function Dashboard() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-2">
       <DashboardGridStats />
-      <div className="flex flex-row w-full gap-4">
+      <div className="flex flex-row gap-4 w-full">
         <TransactionChart />
         <BuyerProfileChart />
       </div>
-      <div className="flex flex-row w-full gap-4">
+      <div className="flex flex-row gap-2 w-full">
         <RecentOrders />
       </div>
     </div>
   );
-};
-
-export default Dashboard;
+}
