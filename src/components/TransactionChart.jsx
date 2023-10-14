@@ -73,8 +73,8 @@ const TransactionChart = () => {
       <div className="w-full flex-1 text-xs">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
-            width={500} // Increase the width
-            height={300} // Increase the height
+            width={500}
+            height={300}
             data={data}
             margin={{
               top: 10,
